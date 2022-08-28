@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:id="@+id/text_semesterGpa"
+        android:layout_width="249dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="semeter's GPA"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value_cumulativeGpa" />
+
+    <TextView
+        android:id="@+id/value_semeterGpa"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="4.0/4.0"
+        android:textSize="34sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_semesterGpa" />
+
+    <TextView
+        android:id="@+id/increasedDecreased"
+        android:layout_width="335dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="congrates your gpa is increased "
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/text_cumulativeGpa"
+        android:layout_width="249dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="comulative GPA"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/increasedDecreased" />
+
+    <TextView
+        android:id="@+id/value_cumulativeGpa"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="4.0/4.0"
+        android:textSize="34sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_cumulativeGpa" />
+</androidx.constraintlayout.widget.ConstraintLayout>

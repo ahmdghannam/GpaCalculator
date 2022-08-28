@@ -1,0 +1,82 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoursesResults3"
+    android:background="@color/background"
+    >
+
+    <Button
+        android:id="@+id/btn_calcu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/rv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="course#"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="result"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="hours"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="prev result"
+            android:textSize="@dimen/_13ssp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="409dp"
+        android:layout_height="649dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+</androidx.constraintlayout.widget.ConstraintLayout>
